@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { Tasks, markedAsDone } = require("../models/tasks");
+router.get("/", (req, res) => {
+  res.send("Server Running Now");
+});
 
 router.get("/getTasks", async (req, res) => {
   try {
