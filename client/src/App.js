@@ -17,7 +17,7 @@ function App() {
     setLoading(true);
     axios({
       method: "GET",
-      url: "http://localhost:5000/api/getTasks",
+      url: "https://task-management-backend-liard.vercel.app/getTasks",
     })
       .then((res) => {
         setTasks(res.data.taskData);
